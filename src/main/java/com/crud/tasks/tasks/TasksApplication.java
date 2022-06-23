@@ -1,4 +1,4 @@
-package com.crud.tasks;
+package com.crud.tasks.tasks;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
