@@ -22,4 +22,10 @@ public class TaskController {
         List<Task> tasks = service.getAllTasks();
         return taskMapper.mapToTaskDtoList(tasks);
     }
+
+    @GetMapping("/id")
+    public TaskDto getTaskWithId(@RequestParam Long id) {
+        Task task = service.getTaskById(id);
+        return taskMapper.mapToTaskDto(task);
+    }
 }
